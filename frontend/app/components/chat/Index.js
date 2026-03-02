@@ -5,7 +5,7 @@ import AskName from "./askname/Index"
 import Admin from "./admin/Index"
 import User from "./user/Index"
 
-const socket = io("https://superb-ulrikaumeko-master122-18c28fbd.koyeb.app", {
+const socket = io("https://axon-faq-live-server.onrender.com", {
   autoConnect: false,
   reconnection: true,
   reconnectionAttempts: 5,
