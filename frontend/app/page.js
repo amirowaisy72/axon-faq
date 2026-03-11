@@ -6,7 +6,7 @@ import Faqs from "@/app/components/faqs/Index"
 import ChatBox from "@/app/components/chat/Index"
 import Header from "@/app/components/header/Index"
 import Footer from "@/app/components/footer/Index"
-import phone from "@/app/phone"
+import { phone } from "@/app/phone"
 
 export default function FAQPage() {
   const [isChatOpen, setIsChatOpen] = useState(false)

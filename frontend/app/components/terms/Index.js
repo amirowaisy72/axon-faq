@@ -5,7 +5,7 @@ import { Shield, FileText, Users, Lock, AlertCircle, CheckCircle, Scale, Globe, 
 import ChatBox from "@/app/components/chat/Index"
 import Header from "@/app/components/header/Index"
 import Footer from "@/app/components/footer/Index"
-import phone from "@/app/phone"
+import { phone } from "@/app/phone"
 
 const termsCategories = [
   { name: "All Terms", icon: FileText, active: true },
@@ -232,11 +232,10 @@ export default function TermsConditionsPage() {
                     <button
                       key={category.name}
                       onClick={() => setSelectedCategory(category.name)}
-                      className={`group relative p-6 rounded-2xl font-semibold text-left transition-all duration-300 ${
-                        selectedCategory === category.name
+                      className={`group relative p-6 rounded-2xl font-semibold text-left transition-all duration-300 ${selectedCategory === category.name
                           ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg scale-105"
                           : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:scale-102"
-                      }`}
+                        }`}
                     >
                       <div className="flex items-center space-x-3">
                         <IconComponent
@@ -325,11 +324,10 @@ export default function TermsConditionsPage() {
                     <button
                       key={index}
                       onClick={() => toggleSection(index)}
-                      className={`w-full text-left p-3 rounded-xl text-sm transition-all duration-300 ${
-                        expandedSections[index]
+                      className={`w-full text-left p-3 rounded-xl text-sm transition-all duration-300 ${expandedSections[index]
                           ? "bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 font-semibold"
                           : "text-gray-600 hover:bg-gray-100"
-                      }`}
+                        }`}
                     >
                       {section.title}
                     </button>
