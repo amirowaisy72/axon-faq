@@ -14,7 +14,7 @@ import {
     Send,
     Shield,
 } from "lucide-react"
-import phone from "@/app/phone"
+import { phone } from "@/app/phone"
 import Footer from "@/app/components/footer/Index"
 import Header from "@/app/components/header/Index"
 import Link from "next/link"
