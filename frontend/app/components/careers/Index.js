@@ -5,7 +5,7 @@ import { Search, MapPin, Clock, DollarSign, Sparkles, ChevronRight, Building, Ca
 import ContactModal from "./contact-modal"
 import Header from "@/app/components/header/Index"
 import Footer from "@/app/components/footer/Index"
-import { phone } from "@/app/phone"
+import { phone, telegram } from "@/app/phone"
 
 const jobCategories = [
     { name: "All Jobs", count: 2, active: true },
@@ -130,7 +130,7 @@ export default function CareersPage() {
         setIsContactModalOpen(true)
     }
 
-    const telegramUsername = "axon_support"
+    const telegramUsername = telegram
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-950 relative overflow-hidden text-gray-300">
